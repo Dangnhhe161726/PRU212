@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TriggerCheckPointFinish : MonoBehaviour
 {
@@ -13,11 +14,18 @@ public class TriggerCheckPointFinish : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            cup.GetComponent<SpriteRenderer>().enabled = true;
-            checkPointFinish.GetComponent<SpriteRenderer>().enabled = false;
-            checkPointFinish.GetComponent<BoxCollider2D>().enabled = false;
-            finishSourceEffect.Play(); 
+            StartCoroutine(PauseAndShow());
         }
+    }
+
+    private IEnumerator PauseAndShow()
+    {
+        cup.GetComponent<SpriteRenderer>().enabled = true;
+        checkPointFinish.GetComponent<SpriteRenderer>().enabled = false;
+        checkPointFinish.GetComponent<BoxCollider2D>().enabled = false;
+        finishSourceEffect.Play();
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("EndGame");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
