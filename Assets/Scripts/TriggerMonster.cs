@@ -1,6 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class TriggerMonster : MonoBehaviour
@@ -65,5 +63,9 @@ public class TriggerMonster : MonoBehaviour
         {
             animator.SetBool("stopFly", true);
         }
+    }
+    public void Destroy()
+    {
+        Destroy(gameObject);
     }
 }
