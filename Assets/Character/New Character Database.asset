@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f494beac63abc46a68bfc2156b4e42, type: 3}
+  m_Name: New Character Database
+  m_EditorClassIdentifier: 
+  characters:
+  - characterName: Mask Dude
+    characterSprite: {fileID: -6367560908665664636, guid: 3750f45c844123341b9a777a96cb1eca, type: 3}
+    animatorOverrideController: {fileID: 22100000, guid: 1da7bd2410b5eb94f99f9ce6f23d1730, type: 2}
+  - characterName: Ninja Frog
+    characterSprite: {fileID: -6367560908665664636, guid: cd947491a13509945aa1b644f9db3ef2, type: 3}
+    animatorOverrideController: {fileID: 22100000, guid: b72b809da6fc241479b757d439011ac7, type: 2}
+  - characterName: Pink Man
+    characterSprite: {fileID: -6367560908665664636, guid: d348dff3819df794186a80cb95777629, type: 3}
+    animatorOverrideController: {fileID: 22100000, guid: daf3addb154ada84190f1af6ef833065, type: 2}
+  - characterName: Vitural Guy
+    characterSprite: {fileID: -6367560908665664636, guid: 40de9a8703e2e5a47882b0b86451c741, type: 3}
+    animatorOverrideController: {fileID: 22100000, guid: afe379f2afeaf1f45862ad3eb9969e41, type: 2}
